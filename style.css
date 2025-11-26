@@ -3,10 +3,9 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f7f7f7;
+    background-color: white; /* Bembeyaz yaptık! */
     text-align: center;
 }
-
 .hero {
     background-color: #f4e9e4; /* Yumuşak, çiçek tonu */
     padding: 60px 20px;
