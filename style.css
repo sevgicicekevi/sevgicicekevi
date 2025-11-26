@@ -89,3 +89,24 @@ footer {
     padding: 20px;
     font-size: 0.9em;
 }
+/* Görsel İyileştirmeler */
+.urun-kart, .cta-button {
+    border-radius: 12px; /* Köşeleri yuvarlama */
+}
+
+/* Mobil Cihazlar İçin Uyumluluk (Responsive) */
+@media (max-width: 600px) {
+    .urun-grid {
+        flex-direction: column; /* Mobil telefonda kartları alt alta sırala */
+        align-items: center;
+    }
+    .urun-kart {
+        width: 90%; /* Mobil genişliği artır */
+        margin-bottom: 15px;
+    }
+    .avantajlar ul {
+        flex-direction: column; /* Avantaj listesini mobil için alt alta getir */
+        gap: 15px;
+        padding-left: 0;
+    }
+}
