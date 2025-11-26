@@ -110,3 +110,11 @@ footer {
         padding-left: 0;
     }
 }
+/* Logo Arka Planını Beyaz Yapma */
+.hero .logo-container {
+    background-color: white; /* Logonun arkasını beyaz yapıyoruz */
+    padding: 20px; /* Logoya nefes alması için biraz boşluk ver */
+    border-radius: 15px; /* Kenarları hafif yuvarlayarak modern bir görünüm kat */
+    display: inline-block; /* Arka planın sadece logoyu kaplamasını sağla */
+    margin-bottom: 20px;
+}
