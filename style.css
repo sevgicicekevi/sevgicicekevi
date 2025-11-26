@@ -13,7 +13,7 @@ body {
 }
 
 .logo-container img {
-    width: 150px; /* Logonun büyüklüğünü ayarlayabilirsin */
+    width: 600px; /* Logonun büyüklüğünü ayarlayabilirsin */
     display: block;
     margin: 0 auto 15px;
 }
