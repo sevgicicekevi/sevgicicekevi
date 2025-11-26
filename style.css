@@ -1,24 +1,36 @@
+/* Genel Stil Ayarları */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: white; /* Bembeyaz yaptık! */
+    background-color: white; /* Logolu alanın dışındaki ana arka plan beyaz */
     text-align: center;
 }
+
+/* Ana Başlık (Hero) Bölümü Stili */
 .hero {
-    background-color: #f4e9e4; /* Yumuşak, çiçek tonu */
+    background-color: white; /* Logonun ve başlığın olduğu alan beyaz kalır */
     padding: 60px 20px;
 }
 
 .logo-container img {
-    width: 250px; /* Logonun büyüklüğünü ayarlayabilirsin */
+    width: 250px; /* Logo Boyutu */
     display: block;
     margin: 0 auto 15px;
 }
 
+/* Logo Çevresindeki Beyaz Kutu Stili (Görünürlüğü Artırma) */
+.hero .logo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 .hero h1 {
-    color: #a05252; /* Hafif bir gül rengi */
+    color: #a05252;
     font-size: 2.5em;
     margin-bottom: 5px;
 }
@@ -35,7 +47,7 @@ body {
     padding: 12px 25px;
     margin-top: 25px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 12px;
     font-weight: 700;
     transition: background-color 0.3s;
 }
@@ -44,9 +56,11 @@ body {
     background-color: #8c4646;
 }
 
+/* Tüm Section (Bölüm) Alanlarına Pastel Arka Plan */
 section {
     padding: 40px 20px;
     border-bottom: 1px solid #eee;
+    background-color: #fcf9f8; /* Yumuşak, pastel krem tonu */
 }
 
 section h2 {
@@ -54,6 +68,18 @@ section h2 {
     margin-bottom: 30px;
 }
 
+/* Hakkımızda Bölümü için istisna: Beyaz kalır */
+.hakkimizda {
+    background-color: white; /* Pastel tonun üstünde kontrast için beyaz kalmalı */
+    padding: 50px 20px;
+}
+.hakkimizda p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+/* Ürün Kartları Stili */
 .urun-grid {
     display: flex;
     justify-content: center;
@@ -64,11 +90,12 @@ section h2 {
 .urun-kart {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     width: 250px;
 }
 
+/* Avantajlar bölümü stili */
 .avantajlar ul {
     list-style: none;
     padding: 0;
@@ -82,38 +109,27 @@ section h2 {
     color: #333;
 }
 
+/* Footer (Alt Bilgi) Stili */
 footer {
-    background-color: #5d3838;
-    color: white;
+    background-color: #e6a9a9; /* Yumuşak pastel gül rengi */
+    color: #333; /* Yazı rengini koyu yapıyoruz */
     padding: 20px;
     font-size: 0.9em;
-}
-/* Görsel İyileştirmeler */
-.urun-kart, .cta-button {
-    border-radius: 12px; /* Köşeleri yuvarlama */
 }
 
 /* Mobil Cihazlar İçin Uyumluluk (Responsive) */
 @media (max-width: 600px) {
     .urun-grid {
-        flex-direction: column; /* Mobil telefonda kartları alt alta sırala */
+        flex-direction: column;
         align-items: center;
     }
     .urun-kart {
-        width: 90%; /* Mobil genişliği artır */
+        width: 90%;
         margin-bottom: 15px;
     }
     .avantajlar ul {
-        flex-direction: column; /* Avantaj listesini mobil için alt alta getir */
+        flex-direction: column;
         gap: 15px;
         padding-left: 0;
     }
-}
-/* Logo Arka Planını Beyaz Yapma */
-.hero .logo-container {
-    background-color: white; /* Logonun arkasını beyaz yapıyoruz */
-    padding: 20px; /* Logoya nefes alması için biraz boşluk ver */
-    border-radius: 15px; /* Kenarları hafif yuvarlayarak modern bir görünüm kat */
-    display: inline-block; /* Arka planın sadece logoyu kaplamasını sağla */
-    margin-bottom: 20px;
 }
